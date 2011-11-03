@@ -1,3 +1,9 @@
+# revision 23969
+# category Package
+# catalog-ctan /fonts/dejavu
+# catalog-date 2011-08-25 23:27:03 +0200
+# catalog-license lppl
+# catalog-version 2.33
 Name:		texlive-dejavu
 Version:	2.33
 Release:	1
@@ -587,6 +593,7 @@ features will come later.
 %doc %{_texmfdistdir}/doc/fonts/dejavu/font-doc/status.txt
 %doc %{_texmfdistdir}/doc/fonts/dejavu/font-doc/unicover.txt
 %doc %{_texmfdistdir}/doc/fonts/dejavu/manifest.txt
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -597,3 +604,5 @@ features will come later.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
