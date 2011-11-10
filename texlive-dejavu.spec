@@ -1,4 +1,4 @@
-# revision 23969
+# revision 24513
 # category Package
 # catalog-ctan /fonts/dejavu
 # catalog-date 2011-08-25 23:27:03 +0200
@@ -6,7 +6,7 @@
 # catalog-version 2.33
 Name:		texlive-dejavu
 Version:	2.33
-Release:	1
+Release:	2
 Summary:	LaTeX support for the fonts DejaVu
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/dejavu
@@ -49,6 +49,7 @@ features will come later.
 %files
 %{_texmfdistdir}/fonts/afm/public/dejavu/DejaVuSans-Bold.afm
 %{_texmfdistdir}/fonts/afm/public/dejavu/DejaVuSans-BoldOblique.afm
+%{_texmfdistdir}/fonts/afm/public/dejavu/DejaVuSans-ExtraLight.afm
 %{_texmfdistdir}/fonts/afm/public/dejavu/DejaVuSans-Oblique.afm
 %{_texmfdistdir}/fonts/afm/public/dejavu/DejaVuSans.afm
 %{_texmfdistdir}/fonts/afm/public/dejavu/DejaVuSansCondensed-Bold.afm
@@ -89,6 +90,17 @@ features will come later.
 %{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusans_t2c.enc
 %{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusans_ts1.enc
 %{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusans_x2.enc
+%{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusanslight_il2.enc
+%{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusanslight_lgr.enc
+%{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusanslight_ot1.enc
+%{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusanslight_qx.enc
+%{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusanslight_t1-truetype.enc
+%{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusanslight_t1-type1.enc
+%{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusanslight_t2a.enc
+%{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusanslight_t2b.enc
+%{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusanslight_t2c.enc
+%{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusanslight_ts1.enc
+%{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavusanslight_x2.enc
 %{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavuserif_il2.enc
 %{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavuserif_lgr.enc
 %{_texmfdistdir}/fonts/enc/dvips/dejavu/dejavuserif_ot1.enc
@@ -128,6 +140,23 @@ features will come later.
 %{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-BoldOblique-tlf-ts1--base.tfm
 %{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-BoldOblique-tlf-ts1.tfm
 %{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-BoldOblique-tlf-x2.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-il2.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-lgr.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-ot1.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-qx--base.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-qx.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-t1--base.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-t1.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-t2a--base.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-t2a.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-t2b--base.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-t2b.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-t2c--base.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-t2c.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-ts1--base.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-ts1.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-x2--base.tfm
+%{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-ExtraLight-tlf-x2.tfm
 %{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-Oblique-tlf-il2.tfm
 %{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-Oblique-tlf-lgr.tfm
 %{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSans-Oblique-tlf-ot1.tfm
@@ -384,6 +413,7 @@ features will come later.
 %{_texmfdistdir}/fonts/tfm/public/dejavu/DejaVuSerifCondensed-tlf-x2.tfm
 %{_texmfdistdir}/fonts/truetype/public/dejavu/DejaVuSans-Bold.ttf
 %{_texmfdistdir}/fonts/truetype/public/dejavu/DejaVuSans-BoldOblique.ttf
+%{_texmfdistdir}/fonts/truetype/public/dejavu/DejaVuSans-ExtraLight.ttf
 %{_texmfdistdir}/fonts/truetype/public/dejavu/DejaVuSans-Oblique.ttf
 %{_texmfdistdir}/fonts/truetype/public/dejavu/DejaVuSans.ttf
 %{_texmfdistdir}/fonts/truetype/public/dejavu/DejaVuSansCondensed-Bold.ttf
@@ -406,6 +436,8 @@ features will come later.
 %{_texmfdistdir}/fonts/type1/public/dejavu/DejaVuSans-Bold.pfm
 %{_texmfdistdir}/fonts/type1/public/dejavu/DejaVuSans-BoldOblique.pfb
 %{_texmfdistdir}/fonts/type1/public/dejavu/DejaVuSans-BoldOblique.pfm
+%{_texmfdistdir}/fonts/type1/public/dejavu/DejaVuSans-ExtraLight.pfb
+%{_texmfdistdir}/fonts/type1/public/dejavu/DejaVuSans-ExtraLight.pfm
 %{_texmfdistdir}/fonts/type1/public/dejavu/DejaVuSans-Oblique.pfb
 %{_texmfdistdir}/fonts/type1/public/dejavu/DejaVuSans-Oblique.pfm
 %{_texmfdistdir}/fonts/type1/public/dejavu/DejaVuSans.pfb
@@ -448,6 +480,13 @@ features will come later.
 %{_texmfdistdir}/fonts/vf/public/dejavu/DejaVuSans-BoldOblique-tlf-qx.vf
 %{_texmfdistdir}/fonts/vf/public/dejavu/DejaVuSans-BoldOblique-tlf-t1.vf
 %{_texmfdistdir}/fonts/vf/public/dejavu/DejaVuSans-BoldOblique-tlf-ts1.vf
+%{_texmfdistdir}/fonts/vf/public/dejavu/DejaVuSans-ExtraLight-tlf-qx.vf
+%{_texmfdistdir}/fonts/vf/public/dejavu/DejaVuSans-ExtraLight-tlf-t1.vf
+%{_texmfdistdir}/fonts/vf/public/dejavu/DejaVuSans-ExtraLight-tlf-t2a.vf
+%{_texmfdistdir}/fonts/vf/public/dejavu/DejaVuSans-ExtraLight-tlf-t2b.vf
+%{_texmfdistdir}/fonts/vf/public/dejavu/DejaVuSans-ExtraLight-tlf-t2c.vf
+%{_texmfdistdir}/fonts/vf/public/dejavu/DejaVuSans-ExtraLight-tlf-ts1.vf
+%{_texmfdistdir}/fonts/vf/public/dejavu/DejaVuSans-ExtraLight-tlf-x2.vf
 %{_texmfdistdir}/fonts/vf/public/dejavu/DejaVuSans-Oblique-tlf-qx.vf
 %{_texmfdistdir}/fonts/vf/public/dejavu/DejaVuSans-Oblique-tlf-t1.vf
 %{_texmfdistdir}/fonts/vf/public/dejavu/DejaVuSans-Oblique-tlf-ts1.vf
