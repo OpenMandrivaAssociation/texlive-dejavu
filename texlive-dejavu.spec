@@ -633,3 +633,21 @@ features will come later.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.33-3
++ Revision: 750883
+- Rebuild to reduce used resources
+
+* Thu Nov 10 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.33-2
++ Revision: 729647
+- texlive-dejavu
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.33-1
++ Revision: 718213
+- texlive-dejavu
+- texlive-dejavu
+- texlive-dejavu
+- texlive-dejavu
+
