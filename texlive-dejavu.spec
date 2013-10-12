@@ -1,13 +1,13 @@
-# revision 24513
+# revision 31771
 # category Package
 # catalog-ctan /fonts/dejavu
-# catalog-date 2011-08-25 23:27:03 +0200
+# catalog-date 2013-04-22 01:01:25 +0200
 # catalog-license lppl
 # catalog-version 2.33
 Name:		texlive-dejavu
 Version:	2.33
-Release:	3
-Summary:	LaTeX support for the fonts DejaVu
+Release:	4
+Summary:	LaTeX support for the DejaVu fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/dejavu
 License:	LPPL
@@ -19,13 +19,13 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-The package contains LaTeX support for the fonts DejaVu. They
-are derived from the Vera fonts and contain more characters and
-styles. The fonts are included in the original TrueType format
-and converted Type 1 format. The (currently) supported
+The package contains LaTeX support for the DejaVu fonts. They
+are derived from the Vera fonts, but contain more characters
+and styles. The fonts are included in the original TrueType
+format and converted Type 1 format. The (currently) supported
 encodings are: OT1, T1, IL2, TS1, T2*, X2, QX, and LGR. The
-package doesn't (currently) support math. More encodings and/or
-features will come later.
+package doesn't (currently) support mathematics. More encodings
+and/or features will come later.
 
 %post
     %{_sbindir}/texlive.post
@@ -607,22 +607,22 @@ features will come later.
 %{_texmfdistdir}/tex/latex/dejavu/X2DejaVuSerif-TLF.fd
 %{_texmfdistdir}/tex/latex/dejavu/X2DejaVuSerifCondensed-TLF.fd
 %{_texmfdistdir}/tex/latex/dejavu/dejavu.sty
+%doc %{_texmfdistdir}/doc/fonts/dejavu/AUTHORS
+%doc %{_texmfdistdir}/doc/fonts/dejavu/BUGS
 %doc %{_texmfdistdir}/doc/fonts/dejavu/CHANGELOG
-%doc %{_texmfdistdir}/doc/fonts/dejavu/README
+%doc %{_texmfdistdir}/doc/fonts/dejavu/LICENSE
+%doc %{_texmfdistdir}/doc/fonts/dejavu/NEWS
+%doc %{_texmfdistdir}/doc/fonts/dejavu/README-font
+%doc %{_texmfdistdir}/doc/fonts/dejavu/README.doc
 %doc %{_texmfdistdir}/doc/fonts/dejavu/dejavu-sample.pdf
 %doc %{_texmfdistdir}/doc/fonts/dejavu/dejavu-sample.tex
 %doc %{_texmfdistdir}/doc/fonts/dejavu/dejavu.pdf
 %doc %{_texmfdistdir}/doc/fonts/dejavu/dejavu.tex
 %doc %{_texmfdistdir}/doc/fonts/dejavu/extrakerns.zip
-%doc %{_texmfdistdir}/doc/fonts/dejavu/font-doc/AUTHORS
-%doc %{_texmfdistdir}/doc/fonts/dejavu/font-doc/BUGS
-%doc %{_texmfdistdir}/doc/fonts/dejavu/font-doc/LICENSE
-%doc %{_texmfdistdir}/doc/fonts/dejavu/font-doc/NEWS
-%doc %{_texmfdistdir}/doc/fonts/dejavu/font-doc/README
-%doc %{_texmfdistdir}/doc/fonts/dejavu/font-doc/langcover.txt
-%doc %{_texmfdistdir}/doc/fonts/dejavu/font-doc/status.txt
-%doc %{_texmfdistdir}/doc/fonts/dejavu/font-doc/unicover.txt
+%doc %{_texmfdistdir}/doc/fonts/dejavu/langcover.txt
 %doc %{_texmfdistdir}/doc/fonts/dejavu/manifest.txt
+%doc %{_texmfdistdir}/doc/fonts/dejavu/status.txt
+%doc %{_texmfdistdir}/doc/fonts/dejavu/unicover.txt
 
 #-----------------------------------------------------------------------
 %prep
@@ -633,21 +633,3 @@ features will come later.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.33-3
-+ Revision: 750883
-- Rebuild to reduce used resources
-
-* Thu Nov 10 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.33-2
-+ Revision: 729647
-- texlive-dejavu
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.33-1
-+ Revision: 718213
-- texlive-dejavu
-- texlive-dejavu
-- texlive-dejavu
-- texlive-dejavu
-
