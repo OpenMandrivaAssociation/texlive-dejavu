@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version 2.33
 Name:		texlive-dejavu
-Version:	2.33
-Release:	12
+Version:	2.34
+Release:	1
 Summary:	LaTeX support for the DejaVu fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/dejavu
