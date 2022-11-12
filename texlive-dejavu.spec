@@ -1,18 +1,12 @@
-# revision 31771
-# category Package
-# catalog-ctan /fonts/dejavu
-# catalog-date 2013-04-22 01:01:25 +0200
-# catalog-license lppl
-# catalog-version 2.33
 Name:		texlive-dejavu
-Version:	2.34
-Release:	3
+Version:	31771
+Release:	1
 Summary:	LaTeX support for the DejaVu fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/dejavu
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dejavu.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dejavu.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dejavu.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dejavu.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ package doesn't (currently) support mathematics. More encodings
 and/or features will come later.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -626,7 +620,7 @@ and/or features will come later.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
