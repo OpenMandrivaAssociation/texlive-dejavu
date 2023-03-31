@@ -1,6 +1,6 @@
 Name:		texlive-dejavu
 Version:	31771
-Release:	1
+Release:	2
 Summary:	LaTeX support for the DejaVu fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/dejavu
