@@ -3,7 +3,7 @@ Version:	31771
 Release:	2
 Summary:	LaTeX support for the DejaVu fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/dejavu
+URL:		https://www.ctan.org/tex-archive/fonts/dejavu
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dejavu.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dejavu.doc.r%{version}.tar.xz
